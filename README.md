@@ -11,15 +11,15 @@ More detailed instructions on configuring and running DHIS2 can be found in the 
 
 The container works by piping environmnent variables to the dhis.conf file in the root of the project.  These are the required variables:
 
-    * `DHIS2_HOME` - Must be '.', location of dhis.conf
-    * `DHIS2_DATABASE_URL` - JDBC URL of Postgres DB for DHIS2
-    * `DHIS2_DATABASE_USERNAME` - Username of Postgres DB User for DHIS2
-    * `DHIS2_DATABASE_PASSWORD` - Passowrd of Postgres DB User for DHIS2
-    * `DHIS2_ENCRYPTION_PASSWORD` - Data encryption password for DHIS2
+* `DHIS2_HOME` - Must be '.', location of dhis.conf
+* `DHIS2_DATABASE_URL` - JDBC URL of Postgres DB for DHIS2
+* `DHIS2_DATABASE_USERNAME` - Username of Postgres DB User for DHIS2
+* `DHIS2_DATABASE_PASSWORD` - Passowrd of Postgres DB User for DHIS2
+* `DHIS2_ENCRYPTION_PASSWORD` - Data encryption password for DHIS2
 
 Optional variables:
 
-    * `JAVA_OPTS` - JVM Options, it's a good idea to limit memory available on Heroku Dynos
+* `JAVA_OPTS` - JVM Options, it's a good idea to limit memory available on Heroku Dynos
 
 The Procfile will try to deploy `dhis.war` in the root of the directory, so download DHIS2 from
 
