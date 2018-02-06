@@ -18,5 +18,3 @@
 # Ignore env
 .env
 
-# Ignore war files (dhis.war)
-**/*.war
